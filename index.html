@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>О компании</title>
+		<link rel="shortcut icon" href="./image./favicon-16x16.png" type="image/x-icon">
+
+		<link href="./style.css" type="text/css" rel="stylesheet">
+		<link href=".//mainpage.css" type="text/css" rel="stylesheet">
+
+		<script src="https://kit.fontawesome.com/3ef6d82729.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="./jquary.js"></script>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+
+	</head>
+	<body style="opacity:0;transition:0.5s;">
+			<header>
+				<div class="mainLogo"><h1>Созвездие </h1><i class="fa-solid fa-meteor" style="color: #ffffff;"></i></div>
+
+				<div class="scrollButton scrollButton.active" ><a href="#wrapper"><i class="fa-sharp fa-solid fa-chevron-down" style="color: #ffffff;"></i></a></div>
+
+				<div class="menuContainer">
+					
+					<a class="menuButton">Меню</a>
+					
+					<nav class="menu ">
+						<a href="./index.html" class="menuItem transition">О компании</a>
+						<a href="./employers.html" class="menuItem  transition">Сотрудники</a>
+						<a href="./achievements.html" class="menuItem  transition">Достижения</a>
+						<a href="./aboutme.html" class="menuItem  transition">Обо мне</a>
+					</nav>
+
+				</div>
+			</header>
+			
+			<div class="videoBanner">
+					<video src="./image/video.mp4" controls></video>
+
+			</div>
+
+
+		<div class="wrapper" id="wrapper">	
+			<main>
+				<div class="blockContent">
+  					<img src="https://24gadget.ru/uploads/posts/2020-09/1599732455_50212766248_3f020f236b_5k.jpg" alt="Фото лаборатории">
+  					<div class="text"><p>Компания "Созвездие" - это научная компания, которая занимается исследованиями в области космических аппаратов и космоса. Наша миссия заключается в поиске новых путей и решений для развития космической индустрии и открытия новых горизонтов для человечества</p>
+
+<p>Мы проводим научные исследования, разрабатываем и тестируем новые технологии и методы, которые позволяют нам лучше понимать космос и использовать его потенциал для блага человечества. Наша команда состоит из опытных ученых и инженеров, которые посвятили свою жизнь исследованию космоса и созданию новых технологий.</p>
+
+<p>Мы работаем с различными организациями, включая государственные и частные компании, и сотрудничаем с другими научными центрами по всему миру. Наша компания гордится тем, что мы способны внести свой вклад в развитие космической индустрии и открыть новые горизонты для будущих поколений.</p>
+
+<p>Если вы разделяете нашу страсть к исследованию космоса и хотите присоединиться к нашей команде, пожалуйста, свяжитесь с нами. Мы всегда ищем талантливых и амбициозных людей, которые готовы работать над самыми интересными и важными проектами в области космической науки.</p></div>
+				</div>
+
+				
+				
+				
+
+
+			</main>
+			
+
+
+
+			<footer>
+			  <div class="container">
+			    <div class="row">
+			      <div class="col-md-4">
+			        <h3>Контакты</h3>
+			        <ul>
+			          <li><i class="fa fa-map-marker"></i> Москва, Россия</li>
+			          <li><i class="fa fa-phone"></i> +7 (495) 123-45-67</li>
+			          <li><i class="fa fa-envelope"></i> info@sozvezdie.ru</li>
+			        </ul>
+			      </div>
+			      <div class="col-md-4">
+			        <h3>О нас</h3>
+			        <p>Компания "Созвездие" занимается научными исследованиями в области астрономии и космических технологий.</p>
+			      </div>
+			      <div class="col-md-4">
+			        <h3>Социальные сети</h3>
+			        <ul>
+			          <li><a href="#" target="_blank"><i class="fa fa-vk"></i> VK</a></li>
+			          <li><a href="#" target="_blank"><i class="fa fa-telegram"></i> Telegram</a></li>
+			        </ul>
+			      </div>
+			    </div>
+			  </div>
+		</footer>
+
+		</div>
+
+	<script>
+	    const menuButton = document.querySelector('.menuButton');
+		const menu = document.querySelector('.menu');
+
+		menuButton.addEventListener('click', function() {
+  		menu.classList.toggle('menu_active');
+		});
+
+		var arrow = document.querySelector('.scrollButton');
+
+		window.addEventListener('scroll', function() {
+  		if (window.scrollY < 100) {
+    	arrow.classList.add('active');
+  		} else {
+    	arrow.classList.remove('active');
+  		}
+		});
+
+
+		const mainLogo = document.querySelector('.mainLogo i');
+
+		function beatLogo() {
+  		mainLogo.classList.add('fa-beat');
+  		setTimeout(() => {
+    	mainLogo.classList.remove('fa-beat');
+  		}, 2000);
+		}
+
+		setInterval(beatLogo, 60000);
+
+		mainLogo.addEventListener('click', beatLogo);
+
+    </script>
+
+    <script ype="text/javascript">
+			 $(document).ready(function() {    
+    		$("body").css("opacity", "1");
+  			});
+	</script>
+
+	</body>
+	</html>	

@@ -1,0 +1,43 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  color:white;
+}
+
+h1 {
+  margin-bottom: 60px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.achievement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+
+.achievement img {
+  max-width: 50%;
+  margin: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.achievement img:hover {
+  transform: scale(1.1);
+}
+
+.achievement h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.achievement p {
+  margin: 20px 0 0 0;
+  text-align: justify;
+}
